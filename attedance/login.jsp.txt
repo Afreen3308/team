@@ -1,0 +1,141 @@
+<%@ page import="java.sql.*" %>
+<html>
+<head>
+<style>
+         body {
+        font-family: "Georgia", serif;
+        background-size:100% auto; ;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;                /* Remove default margin */
+        padding: 0;               /* Remove default padding */
+        width: 100vw;             /* Full width of the viewport */
+        height: 100vh;            /* Full height of the viewport */
+           }
+
+
+      .title{
+          display: flex;
+          color:black;
+          align-items: center;
+          padding:10px;
+          margin-bottom:700px;
+          margin-left:400px;
+          font-size:70px;
+          position:absolute;
+          justify-content:right;
+          }
+       .container{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        }
+        
+     img{
+        width: 500%;
+        border-radius: 200px;
+        margin-right:100px;
+        margin-bottom:40px;
+        border-radius:400px;
+        justify-content: space-between;
+      }
+
+      input {
+      
+        background-color: lavender;
+        text-color: black;
+        width: 90%;
+        padding: 10px;
+        margin: 10px 10px;
+        margin-top:30px;
+        margin-right:900px;
+        border-radius: 9px;
+                font-size: 20px;
+      }
+      select{
+        background-color: lavender;
+        text-color: black;
+        width: 90%;
+        padding: 10px;
+        margin: 10px 10px;
+        margin-right:900px;
+        border-radius: 9px;
+        font-size: 20px;
+      }
+        label{
+    font-size:20px;
+      color:white;
+    }
+      select:hover {
+        background-color: light lavender;
+        transform: scale(1.05);
+      }
+      input[type="text"]:hover {
+        background-color: light lavender;
+        transform: scale(1.05);
+      }      
+      input[type="password"]:hover {
+        background-color: light lavender;
+        transform: scale(1.05);
+      }      
+      form{
+       background: purple;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: grey;
+        width: 400px;
+        text-align: left;
+        margin-right:300px;
+        margin-bottom:48px;
+        box-shadow:white;
+}
+      input[type="submit"] {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        width: 90%;
+        padding: 10px;
+        margin: 10px 10px;
+        margin-right:900px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+input[type="submit"]:hover {
+        background-color: light blue;
+        transform: scale(1.05);
+      }      
+        .login-form {
+    display: flex;
+    justify-content: space-between;
+  }
+    </style>
+    </head>
+<body>
+<section class="title">
+<h1>LOGIN PAGE</h1>
+</section>
+
+    <section class="container">
+      <img src="https://imgs.search.brave.com/JJtAIduQVZZaALeEy1mNVQmazy2HwbAGsR3YEwxr834/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by92aXN1YWwtcmVw/cmVzZW50YXRpb24t/c3R1ZGVudF85MzE4/NzgtMTc4ODE0Lmpw/Zz9zZW10PWFpc19o/eWJyaWQ" alt="student-img" /> <br>
+
+<form method="post" action="AttendanceServlet?action=login">
+
+        <label for="username">UserName:</label>
+        <input type="text" name="username" placeholder="Enter the username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Enter the password" required><br><br>
+        
+        <label for="role">Role:</label>
+        <select name="role" required>
+            <option value="teacher">Teacher</option>
+            <option value="student">Student</option>
+        </select><br><br>
+    <input type="submit" value="Login">
+</form>
+</section>
+</body>
+</html>

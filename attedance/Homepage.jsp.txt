@@ -1,0 +1,98 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Attendance Management System</title>
+<style>
+    body {
+      font-family:Georgia, serif;
+      background-size: 100% auto; /* Full width, auto height */
+      background-color:purple;
+      color:white ;
+      height: 100vh;
+      display: flex;
+      width:80%;
+      justify-content: flex-start; /* Align content to the left */
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+h1 {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      width: 80%;
+      margin-top:20px;
+      max-width: 900px;
+      text-align: left; /* Align text to the left */
+      margin-left: 200px; /* Push it slightly from the edge */
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Align buttons to the left */
+      margin-left: 60%; /* Push from the edge */
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      text-align:center;
+    }
+
+    button {
+      background-color:#ab47bc;
+      color: white;
+      border: black;
+      padding: 14px 28px;
+      margin: 40px; /* Add spacing */
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: grey;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px; /* Space between H1 and buttons */
+      margin-left: 20%; /* Remove extra left margin */
+    }
+    .button-container1 {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px; /* Space between H1 and buttons */
+      margin-left: 20%; /* Remove extra left margin */
+    }
+
+    button:hover {
+      background-color:#7b1fa1;
+      transform: scale(1.08);
+    }
+
+    a {
+      text-decoration: none;
+      color:black;
+      font-size:38px;
+      justift-content:center;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+    <h1>ATTENDANCE MANAGEMENT SYSTEM </h1>
+
+    <div class="button-container">
+      <a href="register.jsp">Register the account, if you don't have <br><button>New Registration</button></a>
+      </div>
+       <div class="button-container1">
+        <a href="login.jsp">Login into your account, if you are already registered<br><button>Login</button></a>
+    </div>
+</body>
+</html>

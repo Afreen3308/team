@@ -1,0 +1,21 @@
+<web-app>
+    <servlet>
+        <servlet-name>AttendanceServlet</servlet-name>
+        <servlet-class>com.example.AttendanceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AttendanceServlet</servlet-name>
+        <url-pattern>/AttendanceServlet</url-pattern>
+    </servlet-mapping>
+----------------------------------------------------------------    
+    <servlet>
+    <servlet-name>DisplayAttendanceServlet</servlet-name>
+    <servlet-class>com.example.DisplayAttendanceServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DisplayAttendanceServlet</servlet-name>
+    <url-pattern>/DisplayAttendanceServlet</url-pattern>
+</servlet-mapping>
+    
+</web-app>
+

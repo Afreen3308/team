@@ -1,0 +1,121 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
+<html>
+<head>
+    <title>Registration Page</title>
+</head>
+<style>
+      body {
+        font-family: Georgia, serif;
+        background: url('https://imgs.search.brave.com/My5FG-mdkZFSXXzy-9xgLs4-8bBJg_dchrTdT0YSFiw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzEwLzU3LzM5LzEw/LzM2MF9GXzEwNTcz/OTEwOTBfWWUxUlVs/YXRxRDFrcUtiRjBD/NHJ3T0FpRDgzaGs2/N0EuanBn') no-repeat center center fixed;
+        background-size:100% auto; ;
+        color: white;
+        height: 100vh;
+        display: flex;
+        justify-content: down;
+        align-items: center;
+      }
+     form {
+         background: purple;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: grey;
+        width: 500px;
+        text-align: left;
+        margin-left:900px;
+        margin-bottom:48px;
+        box-shadow:white;
+      }
+
+      h1 {
+          color:white;
+          align-items: center;
+          padding:70px;
+          margin-bottom:200px;
+          margin-left:150px;
+          text-align:center;
+          font-size:100px;
+          position:absolute;
+          justify-content:center;
+      }
+
+      input {
+       background-color: lavender;
+        text-color: black;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 10px;
+        margin-right:900px;
+        border-radius: 9px;
+        font-size: 20px;
+      }
+
+     
+    select{
+     background-color: lavender;
+        text-color: black;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 10px;
+        margin-right:900px;
+        border-radius: 9px;
+        font-size: 20px;
+    }
+    label{
+    font-size:20px;
+      color:white;
+    }
+    select:hover {
+        background-color: light lavender;
+        transform: scale(1.05);
+      }
+      input[type="text"]:hover {
+        background-color: light lavender;
+        transform: scale(1.05);
+      }      
+      input[type="password"]:hover {
+        background-color: light lavender;
+        transform: scale(1.05);
+      }      
+    
+      input[type="submit"] {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 10px;
+        margin-right:900px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+   input[type="submit"]:hover {
+     background-color: light blue;
+        transform: scale(1.08);
+   }
+</style>
+<body>
+
+<h1>Registration <br> Page</h1>
+
+ <section>
+
+    <form method="post" action="AttendanceServlet?action=register">
+     <label for="username">UserName:</label>
+        <input type="text" name="username" placeholder="Enter the username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Enter the password" required><br><br>
+        
+        <label for="role">Role:</label>
+        <select name="role" required>
+            <option value="teacher">Teacher</option>
+            <option value="student">Student</option>
+        </select><br><br>
+        <input type="submit" value="Register">
+    </form>
+            </section>
+
+    
+</body>
+</html>
